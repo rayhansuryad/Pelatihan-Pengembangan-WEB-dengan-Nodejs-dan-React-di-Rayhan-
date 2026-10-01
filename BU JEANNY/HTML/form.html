@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form pada html</title>
+</head>
+<body>
+    <h2>Formulir</h2>
+    <form action="#" method="post">
+        <!-- Fieldset Area -->
+        <fieldset>
+            
+            <legend >Form Pendaftaran</legend>
+            <main style="background-color: aqua; padding: 5px;">
+            <label for="Nama">Nama :</label> <br>
+            <input type="text" name="nama" id="nama" placeholder="Masukan Nama" required > <br><br>
+
+            <label for="email">Email :</label> <br>
+            <input type="email" name="email" id="email" placeholder="Masukan Email" required> <br><br>
+
+            <label for="password">Password :</label> <br>
+            <input type="password" name="password" id="password" placeholder="Masukan Password" required> <br><br>
+
+            <!-- Select Dengan OptGroup -->
+             <label for="Jurusan">Pilih Jurusan :</label> <br>
+             <select name="jurusan" id="jurusan"required>
+                <optgroup label="Teknik">
+                    <option value="informatika"> Teknik Informatika</option>
+                    <option value="elektro">Teknik Elektro</option>
+                </optgroup>
+                 <optgroup label="Ekonomi">
+                    <option value="akuntansi"> Akuntansi</option>
+                    <option value="manajamen">Manajamen</option>
+                </optgroup>
+             </select><br><br>
+             </main>
+        </fieldset><br>
+        
+        <fieldset >
+             <!-- Text Area -->
+             <label for="alamat">Alamat:    </label>
+             <textarea name="alamat" id="alamat" rows="4" cols="30" placeholder="Masukan Alamat"></textarea> <br><br>
+
+             <!-- CheckBox & Radio -->
+            <label class="from-label">Hobi:    </label><br>
+            <input type="checkbox" name="hobi" value="membaca"> Membaca
+            <input type="checkbox" name="hobi" value="membaca"> Olahraga
+            <input type="checkbox" name="hobi" value="membaca"> Musik <br><br>
+
+            <label class="from-label">Jens Kelamin:    </label><br>
+            <input type="radio" name="hobi" value="membaca"> Pria
+            <input type="radio" name="hobi" value="membaca"> Wanita <br><br>
+        
+
+        <!-- tombol -->
+         <input type="submit" value="Daftar" class="btn-submit">
+         <input type="reset" value="Reset" class="btn-submit"> 
+        </fieldset>
+    </form>
+</body>
+</html>
